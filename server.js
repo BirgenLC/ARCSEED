@@ -58,6 +58,11 @@ app.get('/admin', checkAuth, async (req, res) => {
   `);
 });
 
+app.get('/contact', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'contact.html'));
+});
+
+
 app.post('/contact', async (req, res) => {
   try {
     const contact = await Contact.create(req.body);
