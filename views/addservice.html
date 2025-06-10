@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add New Service</title>
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <h1>Add New Service</h1>
+  <form action="/admin/add-service" method="POST">
+    <label>Title: <input type="text" name="title" required></label><br>
+    <label>Description: <textarea name="description" required></textarea></label><br>
+    <label>Image URL: <input type="text" name="image_url" required></label><br>
+    <button type="submit">Add Service</button>
+  </form>
+</body>
+</html>
